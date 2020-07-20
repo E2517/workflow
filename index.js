@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require("
 
 let { EMAIL_GMAIL } = process.env;
 
