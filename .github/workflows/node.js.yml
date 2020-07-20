@@ -21,9 +21,3 @@ jobs:
       - run: npm run update
         env:
           EMAIL_GMAIL: ${{ secrets.EMAIL_GMAIL }}
-      - run: |
-          git config user.name e2517
-          git config user.email ${{ secrets.EMAIL_GMAIL }}
-          git add README.md
-          git commit -m "[bot] Update README"
-          git push origin master
