@@ -2,9 +2,9 @@ const fs = require("fs");
 
 let { EMAIL_GMAIL } = process.env;
 
-let password = `${EMAIL_GMAIL}`;
+let email = `${EMAIL_GMAIL}`;
 
-if (password === "ccrlawyers@gmail.com") {
+if (email === "ccrlawyers@gmail.com") {
   fs.writeFile("prueba.txt", "Hello world ... email saved", function (err) {
     if (err) throw err;
     console.log("Saved!");
