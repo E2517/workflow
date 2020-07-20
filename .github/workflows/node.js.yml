@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: "14"
       - run: npm install
-      - run: npm run update-readme
+      - run: npm run update
         env:
           EMAIL_GMAIL: ${{ secrets.EMAIL_GMAIL }}
       - run: |
